@@ -199,7 +199,7 @@ footer {
 <div class="services">
 
 <div class="service-box">
-<h4>20+ Years IBM i Experience</h4>
+<h4>30+ Years IBM i Experience</h4>
 <p>Deep knowledge of IBM i architecture, performance tuning, and enterprise operations.</p>
 </div>
 
@@ -218,24 +218,29 @@ footer {
 </section>
 <section id="contact" class="section">
     <h3>Contact Us</h3>
-<form action="https://formspree.io/f/xkoqnrnl" method="POST">
+<p>Need IBM i support, consulting, or managed services? Send us a message and we'll respond quickly.</p>
 
-<input type="text" name="name" placeholder="Name" required>
-<input type="text" name="company" placeholder="Company">
-<input type="email" name="email" placeholder="Email" required>
-<input type="text" name="phone" placeholder="Phone">
+<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
 
-<textarea name="message" rows="4" placeholder="Tell us about your IBM i environment"></textarea>
+<label for="name">Name</label><br>
+<input type="text" id="name" name="name" required><br><br>
 
-<input type="hidden" name="_subject" value="New Midrange Managed Services Inquiry">
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_next" value="https://midrangemanagedservices.com/thankyou.html">
+<label for="email">Email</label><br>
+<input type="email" id="email" name="email" required><br><br>
 
-<button class="button" type="submit">Submit</button>
+<label for="company">Company</label><br>
+<input type="text" id="company" name="company"><br><br>
+
+<label for="message">Message</label><br>
+<textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+<button type="submit">Send Message</button>
 
 </form>
 
 </form>
+
+
 </section>
 
 <footer>
