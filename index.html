@@ -120,6 +120,25 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+    .contact-card {
+    background: white;
+    max-width: 650px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.contact-card h3 {
+    text-align: center;
+}
+
+.contact-card p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+    
 </style>
 </head>
 
@@ -217,60 +236,39 @@ footer {
 
 </section>
 <section id="contact" class="section">
-    <h3>Contact Us</h3>
-<p style="text-align:center; max-width:700px; margin:auto;">
-Need expert help with your IBM i environment? 
-Whether you require managed services, security guidance, performance optimization, or general consulting, our specialists are ready to assist. 
-Send us a message and we'll respond within one business day.
+
+<div class="contact-card">
+
+<h3>Contact Us</h3>
+
+<p>
+Need expert help with your IBM i environment? Whether you need managed services,
+performance optimization, or security guidance, our specialists are ready to help.
 </p>
-<form action="https://formspree.io/f/xkoqnrnl" method="POST" class="contact-form">
 
-<label>Name</label>
-<input type="text" name="name" placeholder="Your Name" required>
+<form action="https://formspree.io/f/xkoqnrnl" method="POST">
 
-<label>Email</label>
-<input type="email" name="email" placeholder="Your Email" required>
+<label for="name">Name</label>
+<input type="text" id="name" name="name" required>
 
-<label>Company</label>
-<input type="text" name="company" placeholder="Company Name">
+<label for="email">Email</label>
+<input type="email" id="email" name="email" required>
 
-<label>Phone</label>
-<input type="text" name="phone" placeholder="Phone Number">
+<label for="company">Company</label>
+<input type="text" id="company" name="company">
 
-<label>IBM i Environment Size</label>
-<select name="system_size">
-<option value="">Select One</option>
-<option>Small (1–100 users)</option>
-<option>Medium (100–500 users)</option>
-<option>Large (500+ users)</option>
-</select>
+<label for="message">Message</label>
+<textarea id="message" name="message" rows="5" required></textarea>
 
-<label>Services Needed</label>
-<select name="services">
-<option value="">Select One</option>
-<option>IBM i Managed Services</option>
-<option>Security Review</option>
-<option>Performance Optimization</option>
-<option>Backup / Disaster Recovery</option>
-<option>PTF & OS Management</option>
-<option>General Consulting</option>
-</select>
-
-<label>Message</label>
-<textarea name="message" rows="5" placeholder="Tell us about your IBM i environment or what help you need"></textarea>
-
-<input type="hidden" name="_subject" value="New IBM i Managed Services Inquiry">
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_next" value="https://midrangemanagedservices.com/thankyou.html">
-
-<button class="button" type="submit">Request Consultation</button>
+<button class="button" type="submit">Send Message</button>
 
 </form>
 
-<p style="text-align:center; color:#666; font-size:14px; max-width:600px; margin:auto;">
+<p style="color:#666; font-size:14px;">
 Your information is kept confidential and will never be shared.
 </p>
 
+</div>
 
 </section>
 
